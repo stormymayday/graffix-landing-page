@@ -559,3 +559,144 @@ html {
         font-size: 0.8rem;
     }
 }
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-container {
+    display: flex;
+    gap: 2rem;
+    background: #f9fafb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    padding: 2rem;
+}
+
+.contact-form p {
+    margin-bottom: 1rem;
+}
+
+.contact-form h3 {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e43c37;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.contact-logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #e9625e;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3b3d3b;
+    color: #ffffff;
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e43c37;
+}
+
+.submit-button.loading {
+    position: relative;
+    color: transparent;
+}
+
+.submit-button.loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-logo {
+        max-width: 150px;
+    }
+
+    .submit-button {
+        display: block;
+        width: 100%;
+    }
+}
