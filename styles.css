@@ -293,7 +293,7 @@ html {
     font-size: 1.5rem;
     font-weight: 700;
     color: #e43c37;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .feature-description {
@@ -336,6 +336,8 @@ html {
     font-size: 0.75rem;
     color: #666;
     line-height: 1.2;
+    margin-left: 1rem;
+    font-style: italic;
 }
 
 .profile-items {
