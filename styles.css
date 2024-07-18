@@ -382,7 +382,7 @@ html {
 .video-row {
     display: flex;
     gap: 2rem;
-    /* margin-top: 0rem; */
+    margin-top: 4rem;
 }
 
 .video-content {
@@ -421,7 +421,7 @@ html {
     padding-top: 37.5%; /* 16:9 aspect ratio for 2/3 width */
 }
 
-.video-container video {
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
