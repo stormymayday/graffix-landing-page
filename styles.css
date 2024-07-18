@@ -454,3 +454,108 @@ html {
         margin-left: calc(-50vw + 50%); /* Center the video container */
     }
 }
+
+/* Team Section Styles */
+.team-section {
+    padding: 60px 0;
+}
+
+.team-section .section-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e43c37;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.team-category {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3b3d3b;
+    margin-bottom: 1.5rem;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 0 1 calc(20% - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.member-image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.member-name {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3b3d3b;
+    margin-bottom: 0.5rem;
+}
+
+.member-linkedin,
+.member-github {
+    font-size: 0.9rem;
+    color: #e43c37;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.member-linkedin:hover,
+.member-github:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: row;
+    }
+
+    .designers-row,
+    .developers-row {
+        flex: 1;
+    }
+
+    .team-members {
+        flex-direction: column;
+    }
+
+    .team-member {
+        flex: 1;
+        margin-bottom: 2rem;
+    }
+
+    .member-image {
+        max-width: 150px;
+    }
+
+    .member-name {
+        font-size: 1rem;
+    }
+
+    .member-linkedin,
+    .member-github {
+        font-size: 0.8rem;
+    }
+}
